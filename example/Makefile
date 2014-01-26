@@ -4,7 +4,7 @@ CP=/bin/cp
 RM=-/bin/rm -rf
 LN=/bin/ln -s 
 CFLAGS=-g  -Wall
-LDFLAGS= -lpthread
+LDFLAGS= 
 #链接库名
 LIB_NAME=
 #链接库版本
@@ -12,12 +12,12 @@ LIB_VER=1.0.0
 #平台
 ARCH=
 # 二进制目标
-BIN=app_log
+BIN=opendiameter
 
 #源文件目录
-SrcDir= . src  ../../../fflib/base ../../../fflib/net ../../../fflib/rpc ../../../fflib/cqrs
+SrcDir= . 
 #头文件目录
-IncDir= ./include ../../../fflib/  ../../../fflib/ext
+IncDir= . ../src/
 #连接库目录
 LibDir= /usr/local/lib
 SRCS=$(foreach dir,$(SrcDir),$(wildcard $(dir)/*.cpp))
