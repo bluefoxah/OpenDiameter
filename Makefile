@@ -1,2 +1,8 @@
-default:
-	g++ -o opendiameter main.cpp
+
+.PHONY:all
+
+all:
+	make -C src
+
+clean:
+	make clean -C src/
